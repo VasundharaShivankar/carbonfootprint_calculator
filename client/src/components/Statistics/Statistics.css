@@ -1,0 +1,11 @@
+.bg-img-stat {
+    background: url("https://dtora.wpengine.com/wp-content/uploads/2019/03/world-map.jpg") center center/cover fixed;
+    position: relative;
+    overflow: hidden; /* Ensure the overlay does not overflow */
+}
+
+.translucent-blue {
+    background-color: rgba(171, 222, 232, 0.8); /* Blue translucent color */
+}
+
+

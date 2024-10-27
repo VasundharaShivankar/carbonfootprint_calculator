@@ -1,0 +1,46 @@
+/* src/components/Card.css */
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 300px;
+    padding: 16px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.card-details {
+    font-size: 1rem;
+    color: #666;
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+.card-btn{
+    border: 2px solid black;
+    padding:5px 10px;
+    margin:10px auto;
+    width: 100px;
+    border-radius: 6px;
+    justify-content: center;
+}
+.card-btn:hover{
+    background-color: black;
+    color: white;
+}
