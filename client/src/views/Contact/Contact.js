@@ -74,12 +74,12 @@ export default function ContactUs() {
             <div className='wrapper'>
                 <div className='text-box-3'>
                     <img src={facebook} alt='facebook' className='user-3' />
-                    <p>Be the first on your block get product updates,<br />announcements, news and lots of realiy good content. like us on facebook today!</p>
+                    <p>Be the first in your community to get tips, updates, and insights on sustainable farming. Join us on Facebook today!</p>
                 </div>
 
                 <div className='text-box-3'>
                     <img src={twitter} alt='twitter' className='user-4' />
-                    <p>Where the best tips on conversion optimization, landing<br />pages, content marketing SEO & SEM? follow us on twitter today at!</p>
+                    <p>Discover top tips on sustainable farming, carbon footprint reduction, eco-friendly practices, and more. Follow us on Twitter for daily insights!</p>
                 </div>
             </div>
         </div>
@@ -97,17 +97,12 @@ export default function ContactUs() {
                                 <div className='text-box-5 text-center'>
                                     <img src={team} alt='team' className='user-5 img-fluid rounded'></img>
                                     <p className="mt-3">
-                                    Our core belief is that shopping should be enjoyable, personalized, and effortless. With a carefully curated selection of products, we strive to offer something for everyone—regardless of style or budget. From the latest fashion trends to timeless classics, we prioritize quality and customer satisfaction above all.
+                                    Our core belief is that farming can be both productive and sustainable. With tools to measure, reduce, and improve your carbon footprint, we’re dedicated to helping every farmer succeed. From practical tips to advanced insights, we prioritize environmental health and farmer empowerment above all.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
-                   
-
-                    
                 </div>
 
                 <Features />
