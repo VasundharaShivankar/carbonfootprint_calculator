@@ -4,28 +4,27 @@ import './Features.css'
 export default function Features() {
     const features = {
         "sections": [
-            {
-                "name": "Easy Booking",
-                "content": "Experience hassle-free shopping planning with our easy booking system. Find in just a few clicks!",
-                "logo": "https://cdn-icons-png.flaticon.com/128/61/61584.png"
-            },
-            {
-                "name": "Unified Cart",
-                "content": "Seamless shopping cart experience across online and in-store!",
-                "logo": "https://cdn-icons-png.flaticon.com/128/891/891911.png"
-            },
-            {
-                "name": "Product Recommendations",
-                "content": "Personalized product suggestions based on browsing history and purchase behavior!",
-                "logo": "https://cdn-icons-png.flaticon.com/128/2491/2491921.png"
-            },
-            {
-                "name": "Friendly Support",
-                "content": "Experience personalized assistance and support from our friendly team round the clock. We're here to ensure your shopping experience is smooth and memorable!",
-                "logo": "https://cdn-icons-png.flaticon.com/128/13224/13224269.png"
-            }
-
-        ]
+    {
+        "name": "Carbon Footprint Calculator",
+        "content": "Easily calculate your farm's carbon footprint with our simple and accurate calculator. Just a few steps to valuable insights!",
+        "logo": "https://cdn-icons-png.flaticon.com/128/1234/1234988.png"
+    },
+    {
+        "name": "Eco-Friendly Suggestions",
+        "content": "Get tailored recommendations for fertilizers and practices that reduce environmental impact.",
+        "logo": "https://cdn-icons-png.flaticon.com/128/2731/2731907.png"
+    },
+    {
+        "name": "Personalized Insights",
+        "content": "Receive insights based on your farm data to enhance productivity while maintaining sustainability!",
+        "logo": "https://cdn-icons-png.flaticon.com/128/1140/1140313.png"
+    },
+    {
+        "name": "24/7 Support",
+        "content": "Connect with our team anytime for assistance, farming tips, and answers to your queries. We’re here to support your sustainable journey!",
+        "logo": "https://cdn-icons-png.flaticon.com/128/906/906794.png"
+    }
+]
     };
 
     return (
@@ -37,10 +36,10 @@ export default function Features() {
                     <div key={index} className="feature col">
                         <div className="feature-icon d-inline-flex align-items-center justify-content-center  fs-3 mb-3">
                             {/* You should replace the SVG element with your own logo */}
-                            <img src={section.logo} alt={section.name} width="48" height="48" />
+                            <img src={section.logo} alt={section.name} width="55" height="55"/>
                         </div>
                         <h3 className="fs-3 text-body-emphasis">{section.name}</h3>
-                        <p className='fs-6 text-body-secondary'>{section.content}</p>
+                        <p className='fs-5 text-body-emphasis'>{section.content}</p>
                         
 
                     </div>
