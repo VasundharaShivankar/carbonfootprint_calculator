@@ -4,7 +4,7 @@ import './Footer.css';
 
 export default function Footer() {
     return (
-        <div className='w-100 bg-img-footer pb-5 footer-img'>
+        <div className='w-100 bg-img-footer pb-6 footer-img'>
             <div className="container">
                 <footer className="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5 pb-3 my-5 border-top mb-0">
                     <div className="col">

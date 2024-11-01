@@ -1,8 +1,6 @@
-.bg-img-footer{
-    background: url("https://static.vecteezy.com/system/resources/previews/003/392/837/non_2x/grey-landscape-with-trees-and-village-free-vector.jpg") no-repeat center;
+.bg-img-footer {
+    background: url("https://www.shutterstock.com/image-vector/green-house-woods-260nw-244921357.jpg") no-repeat center;
     background-size: cover;
-    background-position: center bottom;
-    /* position: relative;
-    overflow: hidden; */
-
+    background-position: center;
+    height: 400px;
 }
