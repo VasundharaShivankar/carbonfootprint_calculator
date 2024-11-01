@@ -3,6 +3,12 @@ import { Link } from 'react-router-dom';
 import axios from 'axios'; 
 import { auth } from "../../views/Login/config";
 import toast from 'react-hot-toast';
+import home from "./home.png"
+import calculator from "./calculator.png"
+import community from "./community.png"
+import contact from "./contact.png"
+import signup from "./sign-up.png"
+import "./Navbar.css"
 
 export default function Navbar() {
   const [user, setUser] = useState(null);
@@ -38,10 +44,10 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark py-3" >
+      <nav className="navbar fixed-top navbar-expand-lg py-3" style={{backgroundColor: "rgb(226, 255, 198)"}} >
       <img></img>
         <div className="container-fluid navsize">
-          <Link className="navbar-brand" to="/Shopping">Calculator</Link>
+          <Link className="navbar-brand" to="/Shopping"><img src={calculator} className="navbar-icon"></img><br/>Calculator</Link>
 
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -49,16 +55,16 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+                <Link className="navbar-brand" aria-current="page" to="/"><img src={home} className="navbar-icon"></img><br/>Home</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/review">Community Forum</Link>
+                <Link className="navbar-brand" aria-current="page" to="/review"><img src={community} className="navbar-icon"></img><br/>Community Forum</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/contact">Contact Us</Link>
+                <Link className="navbar-brand" aria-current="page" to="/contact"><img src={contact} className="navbar-icon"></img><br/>Contact Us</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/contact">SIGN UP</Link>
+                <Link className="navbar-brand" aria-current="page" to="/signup"><img src={signup} className="navbar-icon"></img><br/>SIGN UP</Link>
               </li>
               
 
