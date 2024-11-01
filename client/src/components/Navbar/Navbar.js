@@ -47,24 +47,24 @@ export default function Navbar() {
       <nav className="navbar fixed-top navbar-expand-lg py-3" style={{backgroundColor: "rgb(226, 255, 198)"}} >
       <img></img>
         <div className="container-fluid navsize">
-          <Link className="navbar-brand" to="/Shopping"><img src={calculator} className="navbar-icon"></img><br/>Calculator</Link>
+          <Link className="navbar-brand" to="/c"><img src={calculator} className="navbar-icon" style={{marginLeft:"10px"}}></img><br/>Calculator</Link>
 
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
+              <li className="nav-item" style={{marginLeft:"20px"}}>
                 <Link className="navbar-brand" aria-current="page" to="/"><img src={home} className="navbar-icon"></img><br/>Home</Link>
               </li>
-              <li className="nav-item">
-                <Link className="navbar-brand" aria-current="page" to="/review"><img src={community} className="navbar-icon"></img><br/>Community Forum</Link>
+              <li className="nav-item"   style={{marginLeft:"20px"}}>
+                <Link className="navbar-brand" aria-current="page" to="/review"><img src={community} className="navbar-icon"   style={{marginLeft:"44px"}}></img><br/>Community Forum</Link>
               </li>
-              <li className="nav-item">
-                <Link className="navbar-brand" aria-current="page" to="/contact"><img src={contact} className="navbar-icon"></img><br/>Contact Us</Link>
+              <li className="nav-item"  style={{marginLeft:"20px"}}>
+                <Link className="navbar-brand" aria-current="page" to="/contact"><img src={contact} className="navbar-icon"  style={{marginLeft:"16px"}}></img><br/>Contact Us</Link>
               </li>
-              <li className="nav-item">
-                <Link className="navbar-brand" aria-current="page" to="/signup"><img src={signup} className="navbar-icon"></img><br/>SIGN UP</Link>
+              <li className="nav-item"  style={{marginLeft:"20px"}}>
+                <Link className="navbar-brand" aria-current="page" to="/signup"><img src={signup} className="navbar-icon"  style={{marginLeft:"4px"}}></img><br/>Sign Up</Link>
               </li>
               
 
@@ -84,9 +84,9 @@ export default function Navbar() {
               <div className="d-flex align-items-center  ">
                 <Link to="/dashboard" className='text-decoration-none'>
                   <img src={user.photoURL} alt="Profile" className="rounded-circle me-2" style={{ width: '32px', height: '32px' }} />
-                  <span className="text-white me-2">{user.displayName}</span>
+                  <span className="text-dark me-2">{user.displayName}</span>
                 </Link>
-                <button onClick={handleLogout} className="btn btn-info border text-white" type="button">Logout</button>
+                <button onClick={handleLogout} className="btn btn-dark border text-white" type="button">Logout</button>
               </div>
             ) : (
               <Link to='/login' className="text-decoration-none">

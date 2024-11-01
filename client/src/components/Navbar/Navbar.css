@@ -1,5 +1,9 @@
-.navbar-icon{
-    height:50px;
-    width:50px;
-    background-color: rgb(226, 255, 198)
+.navbar-icon {
+    height: 50px;
+    width: 50px;
+    transition: transform 0.4s ease; /* Smooth scaling effect */
+}
+
+.navbar-icon:hover {
+    transform: scale(1.1); /* Scale up by 10% */
 }
