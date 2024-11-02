@@ -86,6 +86,15 @@ app.delete("/review/:id", async (req, res) => {
   });
 });
 
+// New GET endpoint for the root path
+app.get("/", (req, res) => {
+  res.json({
+    success: true,
+    message: "Welcome to the Review page",
+    data: null,
+  });
+});
+
 // Login Api
 
 import User from "./models/User.js"
