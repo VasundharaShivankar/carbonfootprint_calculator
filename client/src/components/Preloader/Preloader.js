@@ -21,7 +21,7 @@ export default function Preloader() {
                         <span className="visually-hidden">Loading...</span>
                     </div> */}
                     <img src={Image1} alt='img' height="70px" className='' />
-                    <h1 className='g-font-b text-black ms-2 text-opacity-75 fs-3 mt-3'>Getting Into Shop...</h1>
+                    <h1 className='g-font-b text-black ms-2 text-opacity-75 fs-3 mt-3'>Step Towards a Greener Future...</h1>
                 </div>
             )}
         </>
