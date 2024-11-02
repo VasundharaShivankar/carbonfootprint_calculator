@@ -44,7 +44,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="navbar fixed-top navbar-expand-lg py-3" style={{backgroundColor: "rgb(226, 255, 198)"}} >
+      <nav className="navbar fixed-top navbar-expand-lg py-3" style={{backgroundColor: "#fff3cd"}} >
       <img></img>
         <div className="container-fluid navsize">
           <Link className="navbar-brand" to="/c"><img src={calculator} className="navbar-icon" style={{marginLeft:"10px"}}></img><br/>Calculator</Link>
