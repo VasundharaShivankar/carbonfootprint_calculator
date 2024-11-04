@@ -61,13 +61,13 @@ function Login() {
     <body className='body'>
       <div className="container col-xl-10 col-xxl-8 px-4 py-5 mb-5">
         <div className="row align-items-center g-lg-5 py-5 mb-5">
-          <div className="col-lg-7 text-center text-lg-start">
-            <img src={img5} alt='img'  style={{ height: "234px" }} />
+          <div className="col-lg-6 text-center text-lg-start">
+            <img src={img5} alt='img'  style={{ height: "234px" }} className='box' />
             <hr className='my-0 mb-4'/>
             <h1 className=" fw-bold lh-1 text-body-emphasis mb-3 mx-5">Visit Now</h1>
             <p className="col-lg-10 fs-6 ">Enjoy Your seamless experience by signing up now!! </p>
           </div>
-          <div className="col-md-10 mx-auto col-lg-5">
+          <div className="col-md-10 mx-auto col-lg-5 box">
             <form className="p-3 p-md-5 border rounded-3 bg-body-tertiary">
             <img src={img3} alt='img' style={{ height: "164px" }} className='loginimg'/>
               <button onClick={handleLogin} className="w-75 mx-auto btn border-info mt-2 btn-md border d-flex " type="button">
