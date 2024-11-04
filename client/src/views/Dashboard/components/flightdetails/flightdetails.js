@@ -1,9 +1,9 @@
 import React from 'react'
 
-import airline1 from './../../airline1.png';
-import airline2 from './../../airline2.png';
-import airline3 from './../../airline3.png';
-import airline4 from './../../airline4.png';
+import f1 from './../../f1.jpg';
+import f2 from './../../f2.jpg';
+import f3 from './../../f3.webp';
+import f4 from './../../f4.jpg';
 import Arrow from './../../arrow.png'
 import './flightdetails.css' 
 
@@ -11,20 +11,20 @@ const flightdetails = (props) =>{
    const {flightname,departurestation,departuretime , arrivaltime, arrivalStation,Ticketprice} = props;
    
   return (
-    <div>
-        flightdetails
+    <div className='products'>
+        PRODUCTS 
       <div className='flight-card'>
         <p>
-          <img src={airline1} className='flight-logo' />
-          <h4>{flightname}</h4>
+          <img src={f1} className='flight-logo' />
+          <h4>Pio Salt</h4>
         </p>
         <p>
           <p className='station-name'>{departurestation}</p>
           <p className='flight-time'>{departuretime}</p>
         </p>
         <p>
-          <p className='middle-para'>Air India</p>
-          <p className='middle-para'>Non-Stop</p>
+          <p className='middle-para'>PIO SALT</p>
+          <p className='middle-para'>Fertilizer</p>
           <img src={Arrow}  className='arrow'/>
         </p>
         <p>
@@ -40,7 +40,7 @@ const flightdetails = (props) =>{
     
       <div className='flight-card'>
         <p>
-        <img src={airline2} className='flight-logo ' />
+        <img src={f2} className='flight-logo ' />
         <h4>IndiGo</h4>
         </p>
         <p>
@@ -65,7 +65,7 @@ const flightdetails = (props) =>{
 
       <div className='flight-card'>
         <p>
-        <img src={airline3} className='flight-logo' />
+        <img src={f3} className='flight-logo' />
         <h4>Spice jet</h4>
         </p>
         <p>
@@ -90,7 +90,7 @@ const flightdetails = (props) =>{
 
       <div className='flight-card'>
         <p>
-        <img src={airline4} className='flight-logo' />
+        <img src={f4} className='flight-logo' />
         <h4>Vistara</h4>
         </p>
         <p>
@@ -111,7 +111,7 @@ const flightdetails = (props) =>{
         </p>
         <button className='cancel-btn' onClick={'CancelFlight'} > ✖ Cancel</button>
       </div>
-      </div>
+    </div>
    
   )
 }

@@ -73,7 +73,7 @@ function Dashboard() {
       </div>
       <div>
       <div>
-        <h4 className='subheading3'>✈ Current Flights ✈</h4>
+        <h4 className='subheading3'>Current list</h4>
       </div>
 
 <div>
