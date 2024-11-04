@@ -62,7 +62,7 @@ function Login() {
       <div className="container col-xl-10 col-xxl-8 px-4 py-5 mb-5">
         <div className="row align-items-center g-lg-5 py-5 mb-5">
           <div className="col-lg-6 text-center text-lg-start">
-            <img src={img5} alt='img'  style={{ height: "234px" }} className='box' />
+            <img src={img5} alt='img'  style={{ height: "234px" }} className='' />
             <hr className='my-0 mb-4'/>
             <h1 className=" fw-bold lh-1 text-body-emphasis mb-3 mx-5">Visit Now</h1>
             <p className="col-lg-10 fs-6 ">Enjoy Your seamless experience by signing up now!! </p>

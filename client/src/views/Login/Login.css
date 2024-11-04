@@ -1,14 +1,26 @@
-.body{
+/* .body{
     background-image: url(img2.png);
     background-repeat: no-repeat;
     background-size: 1550px;
     backface-visibility: visible;
+} */
+.body {
+    /* background-color: #0093E9;
+    background-image: -webkit-linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    background-image: -moz-linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    background-image: -o-linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); */
+    background-image: url(bgimg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.loginimg{
+
+.loginimg {
     padding: 0 auto;
     margin-left: 60px;
 }
-.box{
-    box-shadow:  0 0 35px 15px black;
+
+.box {
+    box-shadow: 0 0 35px 15px black;
     padding: 20px 20px;
 }
