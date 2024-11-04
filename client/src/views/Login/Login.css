@@ -4,3 +4,7 @@
     background-size: 1550px;
     backface-visibility: visible;
 }
+.loginimg{
+    padding: 0 auto;
+    margin-left: 60px;
+}

@@ -69,7 +69,7 @@ function Login() {
           </div>
           <div className="col-md-10 mx-auto col-lg-5">
             <form className="p-3 p-md-5 border rounded-3 bg-body-tertiary">
-            <img src={img3} alt='img' style={{ height: "164px" }} />
+            <img src={img3} alt='img' style={{ height: "164px" }} className='loginimg'/>
               <button onClick={handleLogin} className="w-75 mx-auto btn border-info mt-2 btn-md border d-flex " type="button">
                 <img className="icon mx-3 " src="https://cdn-icons-png.flaticon.com/128/300/300221.png" alt="Google Icon" style={{ height: "24px" }} />
                 Sign in with Google
