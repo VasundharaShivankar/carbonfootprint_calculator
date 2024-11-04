@@ -25,22 +25,34 @@ export default function Navbar() {
 
   const handleLogout = async () => {
     try {
-      
-      const response = await axios.post(`${process.env.REACT_APP_API_URL}/user/logout`,
-      { email: user.email });
-
-      toast.success(response.data.message)
-
-
+      // ... (existing code to send API request)
+  
       localStorage.clear();
-
       await auth.signOut();
-
+  
     } catch (error) {
       console.error("Error logging out:", error);
-    
     }
   };
+  
+  // const handleLogout = async () => {
+  //   try {
+      
+  //     const response = await axios.post(`${process.env.REACT_APP_API_URL}/user/logout`,
+  //     { email: user.email });
+
+  //     toast.success(response.data.message)
+
+
+  //     localStorage.clear();
+
+  //     await auth.signOut();
+
+  //   } catch (error) {
+  //     console.error("Error logging out:", error);
+    
+  //   }
+  // };
 
   return (
     <>
