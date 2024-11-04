@@ -1,33 +1,38 @@
-
-    [
+[
     {
-        "title": "IN-STORE SHOP",
-        "name":  "store",
-        "transport":"shop",
-        "poster":"https://images.unsplash.com/photo-1525396524423-64f7b55f5b33?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "tag":"Embark on Your Next Adventure: Shop Today!",
-        "description": "Shop with us and enjoy a seamless shopping experience.",
-        "buttonText": "Book Anything",
-        "img":"/offline.jpg",
-        "details":"Booking.com is a reliable travel agent in India, which offers great deals on air tickets. Book flights for all destinations across India or the world at the lowest airfares with us. As one of the leading travel portals of India, we constantly endeavour to make your vacation memorable. So, why go anywhere else? Call us to save big on all kinds of travel products and services and have a memorable travel experience on small budget. We believe in creating awesome vacations for our clients through customized holiday packages & tours. Enjoy great savings on flights, hotels and holiday trips with Booking.com.Cheap flights are available at Booking.com, one of the leading travel portals in India. The company offers great discounts on domestic and international flight tickets. Being a reliable name in the traveling industry of India, we focus on providing a smooth providing booking experience to our customers. So, book air tickets at the lowest airfare by planning your trip with us. You can also get all relevant information like how to get the boarding passes, the difference between airline tickets and boarding pass tickets, flight status, arrival and departure times of the flights, web check-in and various information one needs to have before traveling. If you want to book your plane tickets at no convenience fee and looking for transparency in air ticket pricing, we are here to serve you with the best possible offers. To reduce your flight booking cost, we have tied up with several banking partners. You can avail the best flight ticket booking deals for all major low-cost carriers of India and abroad with us. Last minute discounts on air ticket booking are also available with us. So, go for a journey to your preferred destinations with the best airfare discounts.",
-        
-        "id":"1"
-        
-        
+        "title": "CARBON FOOTPRINT CALCULATION",
+        "name": "carbonCalculator",
+        "category": "Agriculture",
+        "poster": "https://cdn.pixabay.com/photo/2019/12/11/18/44/terry-4689024_640.jpg",
+        "tag": "Measure Your Farm’s Environmental Impact",
+        "description": "Calculate the carbon emissions of your farm and take steps towards a greener future.",
+        "buttonText": "Start Calculating",
+        "img": "https://cdn.pixabay.com/photo/2017/08/02/20/38/dirty-2573292_1280.jpg",
+        "details": "Our carbon calculator provides an accurate assessment of your farm's greenhouse gas emissions. By understanding your environmental impact, you can make data-driven decisions for sustainable practices. Use this tool to monitor emissions from fertilizer use, equipment, livestock, and crop production. Gain insights and compare your results with regional averages, helping you track progress toward sustainability goals.",
+        "id": "1"
     },
     {
-        "title": "E-COMMERCE STORE",
-        "transport":"ecommerce",
-        "poster":"https://www.alstom.com/sites/alstom.com/files/styles/cover_650/public/2022/05/19/NorskeTog_CoradiaNordic_render_Creative_and_Advanced_Design.jpg?h=16a6ccf5&itok=pikHkezZ",
-        "tag":"Your Journey Starts Here: Shop Today!",
-        "name": "ecommerce",
-        "description": "Browse our vast selection.",
-        "buttonText": "Shop Now",
-        "img": "/online.jpg",
-        "details":"The railway is the most affordable way to travel in India, and as a trustworthy travel brand, we understands the value of your money and desire to travel. To make your train ticket booking more convenient, we are pleased to become IRCTC Authorized partner. Customer can book their train tickets in the most convenient way with our website. You just need to visit our website or download our mobile app to make your train ticket booking with us.Travelling across the country has become easy due to online train ticket booking. You can visit almost every city by train at an affordable price. Train ticket booking provides several advantages such as low-cost travel, speed, convenience, and a picturesque journey. If you are planning to go to your hometown, a beautiful destination for your vacation, workcation, or any other place, the train is the best mode of transport for you. At EaseMyTrip, you can find multiple trains for your route, timings, fares, and seats. Also, if you want to save on your railway ticket and get notifications for all the latest offers on train ticket booking. At Booking.com, we always come up with lots of exciting offers through which you can save money on travel.Travelling across the country is now easier than ever because of the complete digitization of the IRCTC ticketing procedure. Now, you can book train tickets online from the comfort of your home. And it’s not just the train tickets booking system that has been revolutionized. All other services such as checking the PNR status, live train status, train schedule, and train availability are easy-to-use as well. You only have to enter your IRCTC login credentials to book train tickets with ease.",
-        "id":"2"
-        
-        
+        "title": "SUSTAINABILITY SUGGESTIONS",
+        "name": "sustainabilitySuggestions",
+        "category": "Agriculture",
+        "poster": "https://cdn.pixabay.com/photo/2021/11/14/18/31/fertilizer-6795448_640.jpg",
+        "tag": "Expert Tips for Reducing Farm Emissions",
+        "description": "Receive personalized recommendations for environmentally-friendly farming practices.",
+        "buttonText": "Learn More",
+        "img": "https://cdn.pixabay.com/photo/2021/11/14/18/31/fertilizer-6795448_640.jpg",
+        "details": "Based on your farm’s unique profile, we provide tailored suggestions to reduce carbon emissions. These may include optimized fertilizer application, crop rotation strategies, energy-efficient machinery use, and soil management techniques. Our experts’ advice will help you minimize your farm's ecological footprint while maintaining productivity.",
+        "id": "2"
+    },
+    {
+        "title": "AGRICULTURAL CHATBOT",
+        "name": "farmChatbot",
+        "category": "Agriculture",
+        "poster": "https://cdn.pixabay.com/photo/2019/03/11/10/46/drone-4048345_960_720.jpg",
+        "tag": "Instant Farming Advice at Your Fingertips",
+        "description": "Get immediate answers to all your agricultural questions.",
+        "buttonText": "Chat Now",
+        "img": "https://cdn.pixabay.com/photo/2019/03/11/10/46/drone-4048345_960_720.jpg",
+        "details": "Our chatbot provides quick assistance on a wide range of agricultural topics. From crop selection and pest control to best practices for irrigation, it’s designed to support farmers with real-time solutions. Accessible 24/7, the chatbot helps you make informed decisions, ensuring that expert guidance is always within reach.",
+        "id": "3"
     }
 ]
-
