@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, redirect } from 'react-router-dom';
 import axios from 'axios'; 
 import { auth } from "../../views/Login/config";
 import toast from 'react-hot-toast';
@@ -29,7 +29,8 @@ export default function Navbar() {
   
       localStorage.clear();
       await auth.signOut();
-  
+      toast.success('Logged out successfully');
+      window.location.reload();
     } catch (error) {
       console.error("Error logging out:", error);
     }

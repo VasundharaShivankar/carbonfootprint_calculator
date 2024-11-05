@@ -6,6 +6,7 @@ import f3 from './../../f3.webp';
 import f4 from './../../f4.jpg';
 import Arrow from './../../arrow.png'
 import './flightdetails.css' 
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const flightdetails = (props) =>{
    const {flightname,departurestation,departuretime , arrivaltime, arrivalStation,Ticketprice} = props;
@@ -34,10 +35,10 @@ const flightdetails = (props) =>{
         </p>
         <p>
          {/* {Ticketprice} */}
-         Rs. 
+         Rs.599
         </p>
-        <button className='cancel-btn' onClick={'dleteFlight'} > ✖ Cancel</button>
-      </div>
+        <button type="button" class="btn btn-outline-warning" onClick={'CancelFlight'} >✖ Cancel</button>
+        </div>
 
     
       <div className='flight-card'>
@@ -56,12 +57,12 @@ const flightdetails = (props) =>{
         </p>
         <p>
           <p className='station-name'>BOM</p>
-          <p className='flight-time'>14:20</p>
+          <p className='flight-time'></p>
         </p>
         <p>
-          $1450
+        Rs.599
         </p>
-        <button className='cancel-btn' onClick={'CancelFlight'} >✖ Cancel</button>
+        <button type="button" class="btn btn-outline-warning" onClick={'CancelFlight'} >✖ Cancel</button>
       </div>
 
 
@@ -81,12 +82,12 @@ const flightdetails = (props) =>{
         </p>
         <p>
           <p className='station-name'>BOM</p>
-          <p className='flight-time'>14:20</p>
+          <p className='flight-time'></p>
         </p>
         <p>
-          $2000
+        Rs.599
         </p>
-        <button className='cancel-btn' onClick={'CancelFlight'}> ✖ Cancel</button>
+        <button type="button" class="btn btn-outline-warning" onClick={'CancelFlight'} >✖ Cancel</button>
       </div>
 
 
@@ -106,12 +107,12 @@ const flightdetails = (props) =>{
         </p>
         <p>
           <p className='station-name'>BOM</p>
-          <p className='flight-time'>14:20</p>
+          <p className='flight-time'></p>
         </p>
         <p>
-          $2300
+        Rs.599
         </p>
-        <button className='cancel-btn' onClick={'CancelFlight'} > ✖ Cancel</button>
+        <button type="button" class="btn btn-outline-warning" onClick={'CancelFlight'} >✖ Cancel</button>
       </div>
     </div>
 
@@ -131,12 +132,12 @@ const flightdetails = (props) =>{
         </p>
         <p>
           <p className='station-name'>BOM</p>
-          <p className='flight-time'>14:20</p>
+          <p className='flight-time'></p>
         </p>
         <p>
-          $2000
+        Rs.599
         </p>
-        <button className='cancel-btn' onClick={'CancelFlight'}> ✖ Cancel</button>
+        <button type="button" class="btn btn-outline-warning" onClick={'CancelFlight'} >✖ Cancel</button>
       </div>
     </div>  
   )
