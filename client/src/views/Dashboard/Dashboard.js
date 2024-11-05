@@ -91,10 +91,10 @@ function Dashboard() {
 
 
       <div className='flight-image'>
-        <h1 className='subheading'>Add More Flights..</h1>
+        <h1 className='subheading'>Add More Products...</h1>
         <p className='subheading1'>Travel More And Keep Shinig...</p>
-        <button className='Add-btn  '>
-        <Link className="nav-link active" aria-current="page" to="/Booking">Book Now</Link></button>
+        <button type="button" class="btn btn-outline-warning">
+        <Link className="nav-link active" aria-current="page" to="/Booking">Add Product</Link></button>
       </div>
       <Footer />
     </div>
