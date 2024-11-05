@@ -1,14 +1,38 @@
-@keyframes rotate360 {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.feature.col {
+  padding: 1rem;
+}
+
+/* Center and maintain consistent size for the globe */
+.globe-container {
+  max-width: 100%;
+  padding: 1.5rem;
+}
+
+.globe-img {
+  width: 70%; /* Adjust as needed */
+  max-width: 300px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.globe-img:hover {
+  transform: scale(1.05);
+}
+
+.rotate {
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
   }
-  
-  .rotate {
-    animation: rotate360 10s linear infinite;
-    height: 200px;
+  to {
+      transform: rotate(360deg);
   }
-  
+}

@@ -7,7 +7,7 @@ import Img3 from './main3.jpg';
 
 export default function Carousel() {
     return (
-        <div className='carousel-size' style={{ width: '100%' }}>
+        <div className='carousel-size' style={{ width: '100%', height:"800px" }}>
             <div id="myCarousel" className="carousel slide mb-6" data-bs-ride="carousel">
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
