@@ -3,6 +3,7 @@ import AUsers from './components/AUsers';
 import ABookings from './components/ABookings';
 import AContactUs from './components/AContactUs';
 import AReviews from './components/AReviews';
+import AChatbot from './components/AChatbot'
 
 export default function Admin() {
   const [activeComponent, setActiveComponent] = useState(null); // Initially no component selected
