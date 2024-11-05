@@ -149,9 +149,8 @@ const styles = {
     padding: "10px 20px",
     border: "none",
     backgroundColor: "rgb(255 205 57)",
-    fontFamily:"sans seriff",
+    fontFamily:"Oswald",
     color: "black",
-    fontWeight:"bold",
     borderRadius: "4px",
     cursor: "pointer",
     font :"30px"
