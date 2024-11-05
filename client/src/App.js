@@ -12,6 +12,7 @@ import Payment from "./views/Payment/Payment";
 import Admin from "./views/Admin/Admin";
 import AloginPage from "./views/Admin/AloginPage";
 import Shopping from "./views/Shopping/Shopping"
+import Chatbot from "./views/Chatbot/Chatbot"
 // import AdminLogin from "./views/Admin/AdminLogin"
 
 function App() {
@@ -41,6 +42,11 @@ function App() {
     {
       path: "/booking",
       element: <Booking/>
+    },
+    
+    {
+      path: "/chatbot",
+      element: <Chatbot/>
     },
 
     {
