@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import chatbotimg from "./Chat bot.png"
-import "./chatbot.css"
+import "./Chatbot.css"
 const Chatbot = () => {
   const [messages, setMessages] = useState([
     { sender: "bot", text: "Hello! I'm KrishiCarbon, here to answer your questions about carbon emissions in agriculture. Ask me anything!" }
