@@ -13,26 +13,28 @@ const flightdetails = (props) =>{
   return (
     <div className='products'>
         PRODUCTS 
+      <div className='p1'>
       <div className='flight-card'>
         <p>
           <img src={f1} className='flight-logo' />
-          <h4>Pio Salt</h4>
+          <h4 className='name'>Pio Salt</h4><hr/>
         </p>
         <p>
           <p className='station-name'>{departurestation}</p>
           <p className='flight-time'>{departuretime}</p>
         </p>
         <p>
-          <p className='middle-para'>PIO SALT</p>
-          <p className='middle-para'>Fertilizer</p>
-          <img src={Arrow}  className='arrow'/>
+          <p className='middle-para'><u>CONTACT</u></p>
+          <p className='middle-para'>+91 974352783</p>
+          {/* <img src={Arrow}  className='arrow'/> */}
         </p>
         <p>
           <p className='station-name'>{arrivalStation}</p>
           <p className='flight-time'>{arrivaltime}</p>
         </p>
         <p>
-         {Ticketprice}
+         {/* {Ticketprice} */}
+         Rs. 
         </p>
         <button className='cancel-btn' onClick={'dleteFlight'} > ✖ Cancel</button>
       </div>
@@ -41,16 +43,16 @@ const flightdetails = (props) =>{
       <div className='flight-card'>
         <p>
         <img src={f2} className='flight-logo ' />
-        <h4>IndiGo</h4>
+        <h4 className='name'>COMPO</h4><hr/>
         </p>
         <p>
           <p className='station-name'>JFK</p>
           <p className='flight-time'>13:00</p>
         </p>
         <p>
-          <p className='middle-para'>IndiGo</p>
-          <p className='middle-para'>Non-Stop</p>
-          <img src={Arrow}  className='arrow'/>
+          <p className='middle-para'><u>CONTACT</u></p>
+          <p className='middle-para'>+91 9673875612</p>
+          {/* <img src={Arrow}  className='arrow'/> */}
         </p>
         <p>
           <p className='station-name'>BOM</p>
@@ -66,16 +68,16 @@ const flightdetails = (props) =>{
       <div className='flight-card'>
         <p>
         <img src={f3} className='flight-logo' />
-        <h4>Spice jet</h4>
+        <h4 className='name'>Spice jet</h4><hr/>
         </p>
         <p>
           <p className='station-name'>JFK</p>
           <p className='flight-time'>13:00</p>
         </p>
         <p>
-          <p className='middle-para'>Spice jet</p>
-          <p className='middle-para'>Non-Stop</p>
-          <img src={Arrow}  className='arrow'/>
+          <p className='middle-para'><u>CONTACT</u></p>
+          <p className='middle-para'>+91 9456732522</p>
+          {/* <img src={Arrow}  className='arrow'/> */}
         </p>
         <p>
           <p className='station-name'>BOM</p>
@@ -91,16 +93,16 @@ const flightdetails = (props) =>{
       <div className='flight-card'>
         <p>
         <img src={f4} className='flight-logo' />
-        <h4>Vistara</h4>
+        <h4 className='name'>Vistara</h4><hr/>
         </p>
         <p>
           <p className='station-name'>JFK</p>
           <p className='flight-time'>13:00</p>
         </p>
         <p>
-          <p className='middle-para'>Vistara</p>
-          <p className='middle-para'>Non-Stop</p>
-          <img src={Arrow}  className='arrow'/>
+          <p className='middle-para'><u>CONTACT</u></p>
+          <p className='middle-para'>+91 9777434323</p>
+          {/* <img src={Arrow}  className='arrow'/> */}
         </p>
         <p>
           <p className='station-name'>BOM</p>
@@ -112,7 +114,31 @@ const flightdetails = (props) =>{
         <button className='cancel-btn' onClick={'CancelFlight'} > ✖ Cancel</button>
       </div>
     </div>
-   
+
+    <div className='flight-card'>
+        <p>
+        <img src={f3} className='flight-logo' />
+        <h4 className='name'>Spice jet</h4><hr/>
+        </p>
+        <p>
+          <p className='station-name'>JFK</p>
+          <p className='flight-time'>13:00</p>
+        </p>
+        <p>
+          <p className='middle-para'><u>CONTACT</u></p>
+          <p className='middle-para'>+91 9943527612</p>
+          {/* <img src={Arrow}  className='arrow'/> */}
+        </p>
+        <p>
+          <p className='station-name'>BOM</p>
+          <p className='flight-time'>14:20</p>
+        </p>
+        <p>
+          $2000
+        </p>
+        <button className='cancel-btn' onClick={'CancelFlight'}> ✖ Cancel</button>
+      </div>
+    </div>  
   )
 }
 
