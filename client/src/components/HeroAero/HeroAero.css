@@ -1,6 +1,22 @@
-.img-float{
-    animation: Float 1.3s ease-in-out infinite;
-    animation-delay: 1s, 3s;   
+.img1-float{
+    animation: Float 1.1s ease-in-out infinite;
+    animation-delay: 1s, 2s;   
+  }
+
+  @keyframes Float {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-24px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+  }
+.img2-float{
+    animation: Float 1.1s ease-in-out infinite;
+    animation-delay: 1s, 2s;   
   }
 
   @keyframes Float {

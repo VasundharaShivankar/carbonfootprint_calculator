@@ -1,6 +1,6 @@
 import React from 'react';
 import './HeroSec.css';
-import Img1 from "./img1.jpg"; // Update to the relevant image for carbon footprinting
+import Img1 from "./img1.png"; // Update to the relevant image for carbon footprinting
 import { Link } from 'react-router-dom';
 
 export default function HeroCarbonFootprint() {
