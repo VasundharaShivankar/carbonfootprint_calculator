@@ -64,7 +64,7 @@ function App() {
         </div>
       </div>
 
-      <div className="body p-5">
+      <div className="body p-5 review-height">
         <h1 className="text-center pt-4 text-info-emphasis">Read what our Customers say</h1><hr />
         <div className="container">
           <div className="d-flex flex-wrap">
