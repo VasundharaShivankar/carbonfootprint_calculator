@@ -13,6 +13,7 @@ import Admin from "./views/Admin/Admin";
 import AloginPage from "./views/Admin/AloginPage";
 import Shopping from "./views/Shopping/Shopping"
 import Chatbot from "./views/Chatbot/Chatbot"
+import Calculator from "./views/Calculator/Calculator";
 // import AdminLogin from "./views/Admin/AdminLogin"
 
 function App() {
@@ -87,6 +88,10 @@ function App() {
     {
       path: "/badmin",
       element : <AloginPage/>
+    },
+    {
+      path: "/calculator",
+      element : <Calculator/>
     }
 
 
