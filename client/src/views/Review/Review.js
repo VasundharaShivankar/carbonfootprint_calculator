@@ -44,7 +44,7 @@ function App() {
     <div className='body mt-5'>
       <Navbar/>
       <div className="container mt-5">
-        <div className='col-12 col-sm-7 card m-auto shadow p-4 mt-5'>
+        <div className='col-12 col-sm-7 card m-auto shadow p-4 mt-5 width'  style={{ width: '600px' }}>
           <h1 className="text-center text-info-emphasis ">Add Review</h1><hr />
           <p className="mb-2">Name: <span className='fw-bold '>{userName}</span></p>
           <p className="mb-2">Review: </p>
@@ -58,8 +58,8 @@ function App() {
             className='mb-3 p-2 px-3 rounded border border-black'/>
 
           <div className="mb-3">
-            <button type='button' onClick={reset} className="btn btn-outline-info ">Reset</button>
-            <button type='button' onClick={addReview} className="btn btn-info mx-3">Save</button>
+            <button type='button' onClick={reset} className="btn btn-outline-warning ">Reset</button>
+            <button type='button' onClick={addReview} className="btn btn-warning mx-3">Save</button>
           </div>
         </div>
       </div>

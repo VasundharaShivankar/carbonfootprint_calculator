@@ -5,5 +5,6 @@
     align-items: center;
 }
 .card-wth{
-    width: 400px;
+    width: 200px;
+    box-sizing: border-box; 
 }

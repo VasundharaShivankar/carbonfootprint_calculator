@@ -15,7 +15,7 @@ function ReviewCard({_id, name, message, userPhoto, loadReview}) {
     // const profile = localStorage.getItem("userPhoto");
     
     return (
-        <div className="card p-3 px-4 m-3 card-wth border-info shadow">
+        <div className="p-3 px-4 m-3 card-wth border-info shadow">
             <img src={Quote} alt='img' className="icon-wth"/>
             <p className="ms-4">{message}</p>
             <div className="d-flex name">
