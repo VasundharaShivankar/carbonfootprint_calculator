@@ -91,7 +91,7 @@ function Calculator() {
                 />
               </div>
 
-              <button type="submit" className='btn btn-outline-warning mx-3'>Calculate Carbon Footprint</button>
+              <button type="submit" className='btn btn-outline-warning '>Calculate Carbon Footprint</button>
             </form>
 
             {carbonFootprint !== null && (
