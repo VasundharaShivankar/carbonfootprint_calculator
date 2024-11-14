@@ -29,8 +29,10 @@ function Calculator() {
   };
 
   return (
+    <>
+    <h1>Carbon Footprint Calculator</h1>
+    <div>
     <div className="calculator-container">
-      <h1>Carbon Footprint Calculator</h1>
       <form onSubmit={calculateCarbonFootprint}>
         <div className="form-group">
           <label htmlFor="electricity">Electricity (kWh):</label>
@@ -82,7 +84,7 @@ function Calculator() {
           />
         </div>
 
-        <button type="submit">Calculate Carbon Footprint</button>
+        <button type="submit" className='btn btn-outline-warning mx-3'>Calculate Carbon Footprint</button>
       </form>
 
       {carbonFootprint !== null && (
@@ -91,6 +93,8 @@ function Calculator() {
         </div>
       )}
     </div>
+    </div>
+    </>
   );
 }
 
