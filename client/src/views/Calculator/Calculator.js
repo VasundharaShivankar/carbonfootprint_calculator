@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Navigate } from 'react-router-dom'; 
 import './Calculator.css';
+import './../../components/Navbar/Navbar.js'
+import Navbar from './../../components/Navbar/Navbar.js';
 
 function Calculator() {
   // State variables for user inputs
@@ -30,8 +32,12 @@ function Calculator() {
 
   return (
     <>
-    <h1>Carbon Footprint Calculator</h1>
-    <div>
+    <Navbar />
+            <div className="">
+            <div className='container mt-5'>
+    <p className='title'>CARBON FOOTPRINT CALCULATOR</p>
+    <p className='title-text'>Track Your Impact, Tread Lighter on Earth.</p>
+    <hr />
     <div className="calculator-container">
       <form onSubmit={calculateCarbonFootprint}>
         <div className="form-group">
@@ -92,6 +98,7 @@ function Calculator() {
           <h2>Total Carbon Footprint: {carbonFootprint.toFixed(2)} kg CO2</h2>
         </div>
       )}
+    </div>
     </div>
     </div>
     </>
