@@ -3,6 +3,7 @@ import { Navigate } from 'react-router-dom';
 import './Calculator.css';
 import './../../components/Navbar/Navbar.js'
 import Navbar from './../../components/Navbar/Navbar.js';
+import Footer from './../../components/Footer/Footer.js';
 
 function Calculator() {
   // State variables for user inputs
@@ -101,6 +102,7 @@ function Calculator() {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 }
