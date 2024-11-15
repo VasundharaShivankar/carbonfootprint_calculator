@@ -11,7 +11,7 @@ export default function ReviewComp() {
         try {
             const response = await axios.get(`${process.env.REACT_APP_API_URL}/review`);
             setReviews(response.data.data);
-            // toast.success("Reviews Loaded");
+            toast.success("Reviews Loaded");
         } catch (error) {
             console.error('Error loading reviews:', error);
             toast.error("Failed to load reviews");
