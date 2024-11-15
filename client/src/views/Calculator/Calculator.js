@@ -4,6 +4,7 @@ import './Calculator.css';
 import './../../components/Navbar/Navbar.js'
 import Navbar from './../../components/Navbar/Navbar.js';
 import Footer from './../../components/Footer/Footer.js';
+import Img2 from "./carbonpic.jpg"
 
 function Calculator() {
   // State variables for user inputs
@@ -34,11 +35,12 @@ function Calculator() {
   return (
     <>
       <Navbar />
-      <div className="">
+      <div className="" >
         <div className='container mt-5 maindiv'>
           <p className='title'>CARBON FOOTPRINT CALCULATOR</p>
           <p className='title-text'>Track Your Impact, Tread Lighter on Earth.</p>
           <hr />
+          <div className='main-container'>
           <div className="calculator-container">
             <form onSubmit={calculateCarbonFootprint}>
               <div className="form-group">
@@ -100,7 +102,12 @@ function Calculator() {
               </div>
             )}
           </div>
+
+        <div>
+          <img src={Img2} className='calculator-img'></img>
         </div>
+        </div>
+      </div>
       </div>
       <Footer/>
     </>
