@@ -1,7 +1,12 @@
 .heroimg{
     transition: .5s ease-in-out;
+    max-width: 100%;
+    height: auto;
   }
   
   .heroimg:hover{
     transform: scale(0.9);
   }
+.d-grid {
+    gap: 10px; /* Adjust spacing between buttons */
+}
