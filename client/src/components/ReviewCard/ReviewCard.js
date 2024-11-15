@@ -7,10 +7,10 @@ import './ReviewCard.css';
 
 function ReviewCard({_id, name, message, userPhoto, loadReview}) {
     // const deleteReview = async () => {
-    //     const response = await axios.delete(`${process.env.REACT_APP_API_URL}/review/${_id}`)
-    //     toast.success(response.data.message)
-    //     loadReview();
-    //   }
+    //     const response = await axios.delete(`${process.env.REACT_APP_API_URL}/review/${_id}`);
+    //     toast.success(response.data.message);
+    //     loadReview(); // Reload the reviews after deleting
+    // }
 
     // const profile = localStorage.getItem("userPhoto");
     

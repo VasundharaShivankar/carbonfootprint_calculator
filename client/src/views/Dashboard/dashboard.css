@@ -4,6 +4,9 @@
   border: 2px 2px solid black;
   background-color: white;
 }
+.mainbody{
+  background-attachment: fixed;
+}
 
 .profile {
   height: 120px;
