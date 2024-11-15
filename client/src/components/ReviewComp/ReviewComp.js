@@ -9,9 +9,9 @@ export default function ReviewComp() {
 
     const loadReview = async () => {
         try {
-            const response = await axios.get(`${process.env.REACT_APP_API_URL}/review`);
+            const response = await axios.get(`${process.env.REACT_APP_API_URL}/review`);  // Added backticks here
             setReviews(response.data.data);
-            // toast.success("Reviews Loaded");
+            toast.success("Reviews Loaded");
         } catch (error) {
             console.error('Error loading reviews:', error);
             toast.error("Failed to load reviews");
@@ -19,7 +19,7 @@ export default function ReviewComp() {
     };
 
     useEffect(() => {
-        loadReview();
+        loadReview(); // Call the loadReview function when the component mounts
     }, []);
 
     return (
@@ -27,7 +27,7 @@ export default function ReviewComp() {
             <h1 className="text-center text-info-emphasis">Read what our Customers say</h1>
             <hr />
             <div className="container mx-auto" style={{ maxHeight: '700px', overflowY: 'auto' }}>
-                <div className="d-flex flex-wrap justify-content-center ">
+                <div className="d-flex flex-wrap justify-content-center">
                     {reviews.map((review) => (
                         <ReviewCard key={review._id} {...review} loadReview={loadReview} />
                     ))}
