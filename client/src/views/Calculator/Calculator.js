@@ -13,6 +13,7 @@ function Calculator() {
   const [transportation, setTransportation] = useState('');
   const [food, setFood] = useState('');
   const [waste, setWaste] = useState('');
+  const [fertilizer, setFertilizer] = useState('');
   const [carbonFootprint, setCarbonFootprint] = useState(null);
 
   // Function to calculate carbon footprint
@@ -25,9 +26,10 @@ function Calculator() {
   const transportationCarbon = transportation * 0.23; // CO2 per mile (example coefficient)
   const foodCarbon = food * 0.02; // CO2 per meal (example coefficient)
   const wasteCarbon = waste * 0.5; // CO2 per kg of waste (example coefficient)
-
+  const fertilizercarbon = fertilizer * 5.15;
     // Calculating total carbon footprint
-  const totalCarbonFootprint = electricityCarbon + gasCarbon + transportationCarbon + foodCarbon + wasteCarbon;
+    
+  const totalCarbonFootprint = electricityCarbon + gasCarbon + transportationCarbon + foodCarbon + wasteCarbon + fertilizercarbon;
 
     setCarbonFootprint(totalCarbonFootprint);
   };
@@ -93,6 +95,15 @@ function Calculator() {
                 />
               </div>
 
+              <div className="form-group">
+                <label htmlFor="waste">Fertilizer (kg):</label>
+                <input
+                  type="number"
+                  id="waste"
+                  value={fertilizer}
+                  onChange={(e) => setFertilizer(e.target.value)}
+                />
+              </div>
               <button type="submit" className='btn btn-outline-warning '>Calculate Carbon Footprint</button>
             </form>
 

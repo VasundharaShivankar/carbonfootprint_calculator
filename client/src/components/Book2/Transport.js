@@ -21,7 +21,7 @@ export default function Transport() {
                             <div className="border rounded-2"  style={{ width: "300px" }}> {/* Increased padding for better spacing */}
                                 <h2 className='text-info-emphasis'>{block.title}</h2>
                                 <p className='text-body-secondary'>{block.description}</p>
-                                <Link to={`/destination/${block.id}`} className="btn btn-outline-warning btn-lg px-4 me-md-2">
+                                <Link to={`/calculator`} className="btn btn-outline-warning btn-lg px-4 me-md-2">
                                     {block.buttonText}
                                 </Link>
                             </div>
