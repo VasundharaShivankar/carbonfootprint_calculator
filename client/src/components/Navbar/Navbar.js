@@ -103,7 +103,7 @@ export default function Navbar() {
               </div>
             ) : (
               <Link to='/login' className="text-decoration-none">
-                <button className="btn bg-warning border text-black py-1" type="button">LOGIN</button>
+                <button className="btn bg-warning border text-black py-1" type="button" style={{width:"90px"}}>LOGIN</button>
               </Link>
             )}
           </div>

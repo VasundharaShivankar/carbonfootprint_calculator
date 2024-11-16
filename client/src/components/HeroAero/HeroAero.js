@@ -33,10 +33,10 @@ export default function HeroCarbonFootprint() {
                         </p>
                         <div className="d-grid gap-2 d-md-flex justify-content-md-start">
                             <Link to="/calculator">
-                                <button type="button" className="btn btn-outline-warning btn-lg px-4 me-md-2">Calculate Now</button>
+                                <button type="button" className="btn btn-outline-warning btn-lg">Calculate Now</button>
                             </Link>
                             <Link to="/contact">
-                                <button type="button" className="btn btn-outline-secondary btn-lg px-4">Contact Us</button>
+                                <button type="button" className="btn btn-outline-secondary btn-lg">Contact Us</button>
                             </Link>
                         </div>
                     </div>

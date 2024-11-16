@@ -1,6 +1,11 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensures full height for proper layout */
+}
 .bg-img-footer {
     background: url("https://www.shutterstock.com/image-vector/green-house-woods-260nw-244921357.jpg") no-repeat center;
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 500px;
 }
