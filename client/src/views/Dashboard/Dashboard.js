@@ -60,7 +60,6 @@ function Dashboard() {
       </div>
 
       <div>
-        <h4 className="subheading3">Agricultural Product Details</h4>
         <Flightdetails
           flightname="Pio Salt"
           departurestation="N/A"
@@ -68,14 +67,6 @@ function Dashboard() {
           arrivalStation="N/A"
           arrivaltime="N/A"
           Ticketprice="Rs. 599"
-        />
-        <Flightdetails
-          flightname="COMPO"
-          departurestation="N/A"
-          departuretime="N/A"
-          arrivalStation="N/A"
-          arrivaltime="N/A"
-          Ticketprice="Rs. 499"
         />
       </div>
 

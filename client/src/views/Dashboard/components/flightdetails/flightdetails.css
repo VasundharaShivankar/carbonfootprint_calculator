@@ -1,88 +1,126 @@
-.flight-card {
+.product-list{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+  gap: 20px; /* Space between the cards */
+  padding: 20px;
+  justify-content: center; 
+}
+.product-card {
   flex-wrap: wrap;
-  border: 1px solid #e0e0e0;
-  padding: 10px 20px;
-  padding-top: 20px;
-  margin-left: 60px;
-  margin-right: 60px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 2px gray;
-  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  margin-left:100px;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
   cursor: pointer;
-  position: relative;
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: space-between;
-  /* flex: 1; */
-  /* flex-direction: column; */
-  width: 300px;
-  text-align: center;
+  width: 320px;
+  align-items: center;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .p1 {
-  /* background-color: antiquewhite; */
   display: flex;
-  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
 
 .products {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  /* background-color: aqua; */
+  align-items: center;
+  width: 100%;
 }
 
-.name {
-  font-size: 30px;
-  text-align: center;
+.product-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2e7d32;
+  margin-top: 10px;
+}
+
+.station-name,
+.middle-para {
+  font-size: 16px;
+  color: #555;
 }
 
 .station-name {
-  font-weight: bolder;
-  font-size: 20px;
+  font-weight: bold;
 }
 
-.flight-logo {
-  height: 150px;
-  width: 160px;
-  margin: 10px;
-  justify-content: center;
-  margin: 0 auto;
+.product-logo {
+  height: 260px;
+  width: 270px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .middle-para {
-  margin: 5px;
-
+  margin: 8px 0;
 }
 
-.arrow {
-  height: 40px;
-  width: 70px;
+.cancel-btn,
+.btn-success {
+  border-radius: 20px;
+  padding: 8px 20px;
+  color: white;
+  background-color: #388e3c;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.cancel-btn:hover,
+.btn-success:hover {
+  background-color: #2e7d32;
 }
 
 .cancel-btn {
-  /* position: absolute; */
-  bottom: 10px;
-  right: 20px;
-  /* border: 1px solid red; */
-  border-radius: 10px;
-  padding: 2px 10px;
-  color: #000;
-  background-color: #fff;
+  margin-top: 15px;
+  background-color: #d32f2f;
 }
 
 .cancel-btn:hover {
-  /* background-color: rgb(255, 33, 33); */
-  box-shadow: 2px 3px 2px grey;
-  /* color: white; */
+  background-color: #b71c1c;
 }
 
 .flight-image {
-  color: white;
   width: 100%;
   height: 500px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.237)), url(./../../flight.jpg);
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url('./../../f1.jpg');
   background-size: cover;
+  background-position: center;
+  color: white;
   font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+@media (max-width: 768px) {
+  .product-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row for smaller screens */
+  }
+}
 
+@media (max-width: 480px) {
+  .product-list {
+    grid-template-columns: 1fr; /* 1 card per row for very small screens */
+  }
 }
