@@ -22,7 +22,7 @@ export default function Carousel() {
                                 <h1 style={{ color: 'white', textAlign: 'center' }}>Calculate Your Farm's Carbon Footprint</h1>
                                 <p className="opacity-75" style={{ color: 'white', textAlign: 'center' }}>Get a precise assessment of emissions and start your journey toward sustainability.</p>
                                 <p style={{ display: 'flex', justifyContent: 'center' }}>
-                                    <Link className="btn btn-warning" to="/calculate">Start Calculating</Link>
+                                    <Link className="btn btn-warning" to="/calculator">Start Calculating</Link>
                                 </p>
                             </div>
                         </div>
@@ -34,7 +34,7 @@ export default function Carousel() {
                                 <h1 style={{ color: 'white', textAlign: 'center' }}>Personalized Sustainability Suggestions</h1>
                                 <p style={{ color: 'white', textAlign: 'center' }}>Receive expert advice on practices that can reduce emissions on your farm.</p>
                                 <p style={{ display: 'flex', justifyContent: 'center' }}>
-                                    <Link className="btn btn-warning" to="/suggestions">Learn More</Link>
+                                    <Link className="btn btn-warning" to="/chatbot">Learn More</Link>
                                 </p>
                             </div>
                         </div>
