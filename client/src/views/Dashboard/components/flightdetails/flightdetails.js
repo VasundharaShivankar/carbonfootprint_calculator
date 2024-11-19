@@ -12,134 +12,57 @@ const flightdetails = (props) =>{
    const {flightname,departurestation,departuretime , arrivaltime, arrivalStation,Ticketprice} = props;
    
   return (
-    <div className='products'>
-        PRODUCTS 
-      <div className='p1'>
-      <div className='flight-card'>
-        <p>
-          <img src={f1} className='flight-logo' />
-          <h4 className='name'>Pio Salt</h4><hr/>
-        </p>
-        <p>
-          <p className='station-name'>{departurestation}</p>
-          <p className='flight-time'>{departuretime}</p>
-        </p>
-        <p>
-          <p className='middle-para'><u>CONTACT</u></p>
-          <p className='middle-para'>+91 974352783</p>
-          {/* <img src={Arrow}  className='arrow'/> */}
-        </p>
-        <p>
-          <p className='station-name'>{arrivalStation}</p>
-          <p className='flight-time'>{arrivaltime}</p>
-        </p>
-        <p>
-         {/* {Ticketprice} */}
-         Rs.599
-        </p>
-        <button type="button" class="btn btn-outline-warning" onClick={'CancelFlight'} >✖ Cancel</button>
-        </div>
-
-    
-      <div className='flight-card'>
-        <p>
-        <img src={f2} className='flight-logo ' />
-        <h4 className='name'>COMPO</h4><hr/>
-        </p>
-        <p>
-          <p className='station-name'>JFK</p>
-          <p className='flight-time'>13:00</p>
-        </p>
-        <p>
-          <p className='middle-para'><u>CONTACT</u></p>
-          <p className='middle-para'>+91 9673875612</p>
-          {/* <img src={Arrow}  className='arrow'/> */}
-        </p>
-        <p>
-          <p className='station-name'>BOM</p>
-          <p className='flight-time'></p>
-        </p>
-        <p>
-        Rs.599
-        </p>
-        <button type="button" class="btn btn-outline-warning" onClick={'CancelFlight'} >✖ Cancel</button>
+    <div className="products mt-3">
+    <h2>AGRICULTURAL PRODUCTS</h2>
+    <div className="product-list">
+  
+      {/* Card 1 */}
+      <div className="product-card">
+        <img src={f1} alt="Organic Fertilizer" className="product-logo" />
+        <h4 className="product-name">Organic Fertilizer</h4>
+        <hr />
+        <p className="description">Boost soil fertility with eco-friendly, organic fertilizers that reduce carbon emissions.</p>
+        <p className="contact"><strong>Contact:</strong> +91 9876543210</p>
+        <p className="price"><strong>Price:</strong> Rs. 499</p>
+        <button className="btn btn-outline-success">Buy Now</button>
       </div>
-
-
-      <div className='flight-card'>
-        <p>
-        <img src={f3} className='flight-logo' />
-        <h4 className='name'>Spice jet</h4><hr/>
-        </p>
-        <p>
-          <p className='station-name'>JFK</p>
-          <p className='flight-time'>13:00</p>
-        </p>
-        <p>
-          <p className='middle-para'><u>CONTACT</u></p>
-          <p className='middle-para'>+91 9456732522</p>
-          {/* <img src={Arrow}  className='arrow'/> */}
-        </p>
-        <p>
-          <p className='station-name'>BOM</p>
-          <p className='flight-time'></p>
-        </p>
-        <p>
-        Rs.599
-        </p>
-        <button type="button" class="btn btn-outline-warning" onClick={'CancelFlight'} >✖ Cancel</button>
+  
+      {/* Card 2 */}
+      <div className="product-card">
+        <img src={f2} alt="Biodegradable Pesticide" className="product-logo" />
+        <h4 className="product-name">Biodegradable Pesticide</h4>
+        <hr />
+        <p className="description">Protect your crops with environmentally safe, biodegradable pesticides.</p>
+        <p className="contact"><strong>Contact:</strong> +91 9876543221</p>
+        <p className="price"><strong>Price:</strong> Rs. 699</p>
+        <button className="btn btn-outline-success">Buy Now</button>
       </div>
-
-
-      <div className='flight-card'>
-        <p>
-        <img src={f4} className='flight-logo' />
-        <h4 className='name'>Vistara</h4><hr/>
-        </p>
-        <p>
-          <p className='station-name'>JFK</p>
-          <p className='flight-time'>13:00</p>
-        </p>
-        <p>
-          <p className='middle-para'><u>CONTACT</u></p>
-          <p className='middle-para'>+91 9777434323</p>
-          {/* <img src={Arrow}  className='arrow'/> */}
-        </p>
-        <p>
-          <p className='station-name'>BOM</p>
-          <p className='flight-time'></p>
-        </p>
-        <p>
-        Rs.599
-        </p>
-        <button type="button" class="btn btn-outline-warning" onClick={'CancelFlight'} >✖ Cancel</button>
+  
+      {/* Card 3 */}
+      <div className="product-card">
+        <img src={f3} alt="Plant Growth Enhancer" className="product-logo" />
+        <h4 className="product-name">Plant Growth Enhancer</h4>
+        <hr />
+        <p className="description">Enhance crop yield sustainably with our carbon-neutral growth boosters.</p>
+        <p className="contact"><strong>Contact:</strong> +91 9876543232</p>
+        <p className="price"><strong>Price:</strong> Rs. 799</p>
+        <button className="btn btn-outline-success">Buy Now</button>
       </div>
+  
+      {/* Card 4 */}
+      <div className="product-card">
+        <img src={f4} alt="Compost Kit" className="product-logo" />
+        <h4 className="product-name">Compost Kit</h4>
+        <hr />
+        <p className="description">Turn organic waste into valuable compost with our easy-to-use kit.</p>
+        <p className="contact"><strong>Contact:</strong> +91 9876543243</p>
+        <p className="price"><strong>Price:</strong> Rs. 999</p>
+        <button className="btn btn-outline-success">Buy Now</button>
+      </div>
+  
     </div>
-
-    <div className='flight-card'>
-        <p>
-        <img src={f3} className='flight-logo' />
-        <h4 className='name'>Spice jet</h4><hr/>
-        </p>
-        <p>
-          <p className='station-name'>JFK</p>
-          <p className='flight-time'>13:00</p>
-        </p>
-        <p>
-          <p className='middle-para'><u>CONTACT</u></p>
-          <p className='middle-para'>+91 9943527612</p>
-          {/* <img src={Arrow}  className='arrow'/> */}
-        </p>
-        <p>
-          <p className='station-name'>BOM</p>
-          <p className='flight-time'></p>
-        </p>
-        <p>
-        Rs.599
-        </p>
-        <button type="button" class="btn btn-outline-warning" onClick={'CancelFlight'} >✖ Cancel</button>
-      </div>
-    </div>  
+  </div>
+  
   )
 }
 
