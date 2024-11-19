@@ -363,6 +363,58 @@ app.post("/book-plane-ticket", async (req, res) => {
     data: newBooking,
   });
 })
+// Signup API
+// Signup API
+app.post("/signup", async (req, res) => {
+  const { name, email, password } = req.body;
+
+  // Validate input
+  if (!name || !email || !password) {
+    return res.status(400).json({
+      success: false,
+      message: "All fields are required",
+      data: null,
+    });
+  }
+
+  try {
+    // Check if the user already exists
+    const existingUser = await User.findOne({ email });
+
+    if (existingUser) {
+      return res.status(400).json({
+        success: false,
+        message: "User already exists",
+        data: null,
+      });
+    }
+
+    // Hash the password
+    const bcrypt = await import("bcrypt");
+    const salt = await bcrypt.genSalt(10);
+    const hashedPassword = await bcrypt.hash(password, salt);
+
+    // Create the user
+    const newUser = await User.create({
+      name,
+      email,
+      password: hashedPassword,
+    });
+
+    res.status(201).json({
+      success: true,
+      message: "User registered successfully",
+      data: newUser,
+    });
+  } catch (error) {
+    console.error("Error during signup:", error);
+    res.status(500).json({
+      success: false,
+      message: "Internal server error",
+      data: null,
+    });
+  }
+});
 
 // Admin Api
 

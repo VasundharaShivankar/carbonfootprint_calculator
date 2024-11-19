@@ -1,107 +1,86 @@
+// Signup.js
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import img1 from './img3.png';
-import img2 from './img2.png';
-import img3 from './img1.jpg';
-import img5 from './Earth.webp';
-import './SignUp.css';
+import { Link } from 'react-router-dom'; 
+import img3 from './img4.png';
+import img5 from "./img3.webp";
+import './Signup.css';
+import axios from 'axios';
+import toast from 'react-hot-toast';
 
-function SignUp() {
+function Signup() {
   const [formData, setFormData] = useState({
-    name: '',
     email: '',
     password: '',
+    confirmPassword: '',
   });
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
   };
 
-  const handleSubmit = (e) => {
+  const handleSignup = async (e) => {
     e.preventDefault();
-    console.log('SignUp Form Data:', formData);
-    // Add logic to handle form submission, such as sending data to the server
+
+    if (formData.password !== formData.confirmPassword) {
+      toast.error('Passwords do not match');
+      return;
+    }
+
+    try {
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/signup`, formData);
+      toast.success(response.data.message);
+    } catch (error) {
+      toast.error(error.response?.data?.message || 'Signup failed');
+    }
   };
 
   return (
     <div className="body">
-      <div className="container col-xl-10 col-xxl-8 px-4 py-5 mb-5">
-        <div className="row align-items-center g-lg-5 py-5 mb-5">
+      <div className="container col-xl-10 col-xxl-8 px-4 py-5">
+        <div className="row align-items-center g-lg-5 py-5">
           <div className="col-lg-6 text-center text-lg-start">
-            <h1 className="fw-bold text-body-emphasis mb-3 mx-5">Join Us</h1>
-            <p className="col-lg-10 text-body-emphasis fs-6 mx-5">
-              Create an account to explore amazing features and stay connected!
-            </p>
+            <h1 className="fw-bold text-body-emphasis mb-3 mx-5">Join Us Now</h1>
+            <p className="col-lg-10 text-body-emphasis fs-6 mx-5">Create an account to enjoy exclusive features and updates!</p>
             <Link to="/">
-              <img
-                src={img5}
-                alt="img"
-                style={{ height: "234px", cursor: "pointer" }}
-                className=""
-              />
+              <img src={img5} alt="img" style={{ height: "234px", cursor: "pointer" }} className="" />
             </Link>
           </div>
           <div className="col-md-10 mx-auto col-lg-5 box">
-            <form
-              className="p-3 p-md-5 border rounded-3 bg-body-tertiary"
-              onSubmit={handleSubmit}
-            >
-              <img
-                src={img3}
-                alt="img"
-                style={{ height: "164px" }}
-                className="signupimg"
+            <form className="p-3 p-md-5 border rounded-3 bg-body-tertiary" onSubmit={handleSignup}>
+              <img src={img3} alt="Signup" style={{ height: "164px" }} className="loginimg" />
+              <input
+                type="email"
+                className="form-control my-2"
+                placeholder="Email address"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
               />
-              <div className="form-floating mb-3">
-                <input
-                  type="text"
-                  className="form-control"
-                  id="name"
-                  name="name"
-                  placeholder="Your Name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                />
-                <label htmlFor="name">Full Name</label>
-              </div>
-              <div className="form-floating mb-3">
-                <input
-                  type="email"
-                  className="form-control"
-                  id="email"
-                  name="email"
-                  placeholder="name@example.com"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                />
-                <label htmlFor="email">Email Address</label>
-              </div>
-              <div className="form-floating mb-3">
-                <input
-                  type="password"
-                  className="form-control"
-                  id="password"
-                  name="password"
-                  placeholder="Password"
-                  value={formData.password}
-                  onChange={handleChange}
-                  required
-                />
-                <label htmlFor="password">Password</label>
-              </div>
-              <button
-                className="w-100 btn btn-lg btn-primary mt-3"
-                type="submit"
-              >
-                Sign Up
-              </button>
+              <input
+                type="password"
+                className="form-control my-2"
+                placeholder="Password"
+                name="password"
+                value={formData.password}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="password"
+                className="form-control my-2"
+                placeholder="Confirm Password"
+                name="confirmPassword"
+                value={formData.confirmPassword}
+                onChange={handleChange}
+                required
+              />
+              <button  className="w-50 btn btn-submit border-info btn-md border d-flex d-flex justify-content-center align-items-center" type="submit">Sign Up</button>
               <hr className="my-4" />
-              <small className="text-body-secondary">
-                By signing up, you agree to the terms of service and privacy policy.
-              </small>
+              <small className="text-body-secondary">Already have an account? <Link to="/login">Log In</Link></small>
             </form>
           </div>
         </div>
@@ -110,4 +89,4 @@ function SignUp() {
   );
 }
 
-export default SignUp;
+export default Signup;

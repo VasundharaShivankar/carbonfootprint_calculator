@@ -14,6 +14,7 @@ import AloginPage from "./views/Admin/AloginPage";
 import Shopping from "./views/Shopping/Shopping"
 import Chatbot from "./views/Chatbot/Chatbot"
 import Calculator from "./views/Calculator/Calculator";
+import Signup from "./views/Signup/Signup";
 // import AdminLogin from "./views/Admin/AdminLogin"
 
 function App() {
@@ -72,6 +73,10 @@ function App() {
     {
       path:"/shopping",
       element:<Shopping/>
+    },
+    {
+      path:"/signup",
+      element:<Signup/>
     },
 
     // {
