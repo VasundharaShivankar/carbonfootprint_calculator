@@ -52,12 +52,14 @@ function Signup() {
               Create an account to enjoy exclusive features and updates!
             </p>
             <Link to="/">
+            <div className="img3border">
               <img
                 src={img5}
                 alt="img"
                 style={{ height: "234px", cursor: "pointer" }}
-                className=""
+                className="img5"
               />
+              </div>
             </Link>
           </div>
           <div className="col-md-10 mx-auto col-lg-5 box">
