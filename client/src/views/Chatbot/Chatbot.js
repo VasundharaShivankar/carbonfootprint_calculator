@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import chatbotimg from "./Chat bot.png"
 import "./Chatbot.css"
+import Navbar from "./../../components/Navbar/Navbar.js"
 const Chatbot = () => {
   const [messages, setMessages] = useState([
     { sender: "bot", text: "Hello! I'm KrishiCarbon, here to answer your questions about carbon emissions in agriculture. Ask me anything!" }
@@ -69,6 +70,8 @@ const Chatbot = () => {
   };
 
   return (
+    <>
+    <Navbar/>
     <div style={styles.container}>
       <div style={styles.chatBox}>
       <img src={chatbotimg} className="chatbotimg"></img>
@@ -99,6 +102,7 @@ const Chatbot = () => {
         </button>
       </div>
     </div>
+    </>
   );
 };
 
@@ -111,9 +115,9 @@ const styles = {
     border: "4px solid black",
     borderRadius: "8px",
     overflow: "hidden",
-    margin:"20px auto",
+    margin:"120px auto",
     fontFamily: "Arial, sans-serif",
-    boxShadow:"3px 3px 3px 3px white"
+    boxShadow:"3px 3px 3px 3px white",
   },
   chatBox: {
     flex: 1,
