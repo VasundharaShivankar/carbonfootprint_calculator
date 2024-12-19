@@ -8,14 +8,15 @@
 .product-card {
   flex-wrap: wrap;
   border: 1px solid #d9d9d9;
-  margin-left:100px;
+  margin-left: 40px;
   padding: 15px 20px;
   border-radius: 12px;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
   background-color: #f9f9f9;
   cursor: pointer;
-  width: 320px;
+  width: 310px;
   align-items: center;
+  justify-content: space-evenly;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
@@ -83,11 +84,20 @@
 .cancel-btn:hover,
 .btn-success:hover {
   background-color: #2e7d32;
+  color: white;
 }
 
 .cancel-btn {
   margin-top: 15px;
   background-color: #d32f2f;
+}
+
+.btn1{
+  color: #2e7d32;
+  text-decoration: none;
+}
+.btn1:hover{
+  color: white;
 }
 
 .cancel-btn:hover {
