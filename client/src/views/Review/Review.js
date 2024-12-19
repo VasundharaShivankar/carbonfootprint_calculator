@@ -1,110 +1,91 @@
 import React, { useState, useEffect } from 'react';
 import './Review.css';
-import axios from 'axios';
 import toast from 'react-hot-toast';
 import ReviewCard from './../../components/ReviewCard/ReviewCard';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 
 function App() {
-  const userName = localStorage.getItem('userName');
-  const uPhoto = localStorage.getItem('userPhoto');
+  const userName = localStorage.getItem('userName') || 'Anonymous'; 
+  const uPhoto = localStorage.getItem('userPhoto') || ''; 
 
   const [message, setMessage] = useState('');
   const [reviews, setReviews] = useState([]);
 
-  const loadReview = async () => {
-    try {
-      const response = await axios.get(`${process.env.REACT_APP_API_URL}/review`); // Added backticks here
-      setReviews(response.data.data);
-      toast.success('Reviews Loaded');
-    } catch (error) {
-      console.error('Error loading reviews:', error);
-      toast.error('Failed to load reviews');
-    }
-  };
-
+  // Load reviews from local storage on component mount
   useEffect(() => {
-    loadReview(); // Load reviews when the component mounts
+    const savedReviews = JSON.parse(localStorage.getItem('reviews')) || [];
+    setReviews(savedReviews);
   }, []);
 
-  const addReview = async () => {
+  const addReview = () => {
     if (!message) {
       toast.error('Review message cannot be empty!');
-      return; // Don't proceed if message is empty
+      return;
     }
 
-    try {
-      const response = await axios.post(`${process.env.REACT_APP_API_URL}/review`, {
-        name: userName,
-        message: message,
-        userPhoto: uPhoto,
-      });
+    const newReview = {
+      _id: Date.now(), 
+      name: userName,
+      message: message,
+      userPhoto: uPhoto,
+    };
 
-      toast.success(response.data.message); // Display success toast
+    // Add the new review to the existing reviews
+    const updatedReviews = [newReview, ...reviews];
 
-      // Add the new review to the existing reviews state
-      setReviews((prevReviews) => [
-        ...prevReviews,
-        {
-          _id: response.data.data._id, // Assuming the response contains the new review's ID
-          name: userName,
-          message: message,
-          userPhoto: uPhoto,
-        },
-      ]);
+    // Update state and local storage
+    setReviews(updatedReviews);
+    localStorage.setItem('reviews', JSON.stringify(updatedReviews));
 
-      reset(); // Reset the message input field
-    } catch (error) {
-      console.error('Error adding review:', error);
-      toast.error('Failed to add review');
-    }
+    // Show success popup
+    toast.success('Review added successfully!');
+
+    // Reset the input field
+    reset();
   };
 
   const reset = () => {
-    setMessage(''); // Reset the message state
+    setMessage('');
   };
 
   return (
-    <div className='mainbody mt-5'>
+    <div className="mainbody mt-5">
       <Navbar />
-      <div className='container mt-5'>
-        <div className='col-12 col-sm-7 card m-auto shadow p-4 mt-5 width' style={{ width: '600px' }}>
-          <h1 className='text-center text-info-emphasis'>Add Review</h1>
+      <div className="container mt-5">
+        <div className="col-12 col-sm-7 card m-auto shadow p-4 mt-5 width" style={{ width: '600px' }}>
+          <h1 className="text-center text-info-emphasis">Add Review</h1>
           <hr />
-          <p className='mb-2'>
-            Name: <span className='fw-bold'>{userName}</span>
+          <p className="mb-2">
+            Name: <span className="fw-bold">{userName}</span>
           </p>
-          <p className='mb-2'>Review: </p>
+          <p className="mb-2">Review: </p>
           <input
-            type='text'
-            placeholder='Enter Message'
+            type="text"
+            placeholder="Enter Message"
             value={message}
-            onChange={(e) => {
-              setMessage(e.target.value);
-            }}
-            className='mb-3 p-2 px-3 rounded border border-black'
+            onChange={(e) => setMessage(e.target.value)}
+            className="mb-3 p-2 px-3 rounded border border-black"
           />
-
-          <div className='mb-3'>
-            <button type='button' onClick={reset} className='btn btn-outline-warning'>
+          <div className="mb-3">
+            <button type="button" onClick={reset} className="btn btn-outline-warning">
               Reset
             </button>
-            <button type='button' onClick={addReview} className='btn btn-warning mx-3'>
+            <button type="button" onClick={addReview} className="btn btn-warning mx-3">
               Save
             </button>
           </div>
         </div>
       </div>
 
-      <div className='mainbody p-5 review-height'>
-        <h1 className='text-center pt-4 text-info-emphasis'>Read what our Customers say</h1>
+      <div className="mainbody p-5 review-height">
+        <h1 className="text-center pt-4 text-info-emphasis">Read what our Customers say</h1>
         <hr />
-        <div className='container'>
-          <div className='d-flex flex-wrap'>
+        <div className="container">
+          <div className="d-flex flex-wrap">
             {reviews.map((review) => {
               const { _id, name, message, userPhoto } = review;
-              return <ReviewCard key={_id} _id={_id} name={name} message={message} userPhoto={userPhoto} loadReview={loadReview} />;
+              return <ReviewCard key={_id} _id={_id} name={name} message={message} userPhoto={userPhoto} />;
             })}
           </div>
         </div>

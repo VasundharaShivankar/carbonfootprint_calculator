@@ -5,7 +5,7 @@ import Quote from './quote.png';
 // import User from './user.png';
 import './ReviewCard.css';
 
-function ReviewCard({_id, name, message, userPhoto, loadReview}) {
+function ReviewCard({_id, name, message, loadReview}) {
     // const deleteReview = async () => {
     //     const response = await axios.delete(`${process.env.REACT_APP_API_URL}/review/${_id}`);
     //     toast.success(response.data.message);
@@ -19,7 +19,6 @@ function ReviewCard({_id, name, message, userPhoto, loadReview}) {
             <img src={Quote} alt='img' className="icon-wth"/>
             <p className="ms-4">{message}</p>
             <div className="d-flex name">
-                <img src={userPhoto} alt='img' className="icon-wth rounded-circle "/>
                 <div className="ms-4">
                     <h6 className="fw-bold m-0">{name}</h6>
                     <p className="m-0 text-secondary">user</p>
