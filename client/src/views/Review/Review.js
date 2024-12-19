@@ -50,12 +50,13 @@ function App() {
   };
 
   return (
-    <div className="mainbody mt-5">
+    <div className="mainbody mt-4">
       <Navbar />
-      <div className="container mt-5">
-        <div className="col-12 col-sm-7 card m-auto shadow p-4 mt-5 width" style={{ width: '600px' }}>
-          <h1 className="text-center text-info-emphasis">Add Review</h1>
-          <hr />
+      <div className="container">
+      <p className='title'>ADD REVIEW</p>
+    <p className='title-text'>Share your experience with us! Your feedback inspires us to serve you better.</p>
+    <hr />
+        <div className="col-12 col-sm-7 card m-auto shadow p-4 mt-4 width" style={{ width: '600px' }}>
           <p className="mb-2">
             Name: <span className="fw-bold">{userName}</span>
           </p>
@@ -81,8 +82,8 @@ function App() {
       <div className="mainbody p-5 review-height">
         <h1 className="text-center pt-4 text-info-emphasis">Read what our Customers say</h1>
         <hr />
-        <div className="container">
-          <div className="d-flex flex-wrap">
+        <div className="container review-container">
+          <div className="review-card-wrapper">
             {reviews.map((review) => {
               const { _id, name, message, userPhoto } = review;
               return <ReviewCard key={_id} _id={_id} name={name} message={message} userPhoto={userPhoto} />;

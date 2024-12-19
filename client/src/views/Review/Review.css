@@ -4,3 +4,54 @@
 .review-height{
   height:500px;
 }
+.review-container {
+  margin-top: 10px;
+  padding: 2rem;
+  background-color: #f8f9fa; /* Light background for the review section */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.review-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1.5rem; /* Space between cards */
+}
+
+.review-card-wrapper .review-card {
+  width: 280px; /* Fixed width for cards */
+  background: rgb(224, 248, 205);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card-wrapper .review-card:hover {
+  transform: translateY(-10px); /* Slight lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.review-card-wrapper .review-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #ddd;
+}
+
+.review-card-wrapper .review-card-content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.review-card-wrapper .review-card-content h5 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+.review-card-wrapper .review-card-content p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+}

@@ -7,4 +7,6 @@
 .card-wth{
     width: 200px;
     box-sizing: border-box; 
+    background:  rgb(161, 205, 149);
+    border-radius: 6px;
 }
