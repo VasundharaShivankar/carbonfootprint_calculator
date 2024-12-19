@@ -72,9 +72,9 @@ function Dashboard() {
 
       <div className="flight-image">
         <h1 className="subheading">Add More Products...</h1>
-        <p className="subheading1">Travel More And Keep Shining...</p>
+        <p className="subheading1">Explore More And Enjoy Benefits...</p>
         <button type="button" className="btn btn-outline-warning">
-          <Link className="nav-link active" aria-current="page" to="/Booking">Add Product</Link>
+          <Link className="nav-link active" aria-current="page" to="https://www.bighaat.com/?srsltid=AfmBOoqWT3S-rf97379Su9UbUY2vSRNs4PbYaZH8MwZ9v9wlnXsT0Wlo">Add Product</Link>
         </button>
       </div>
       <Footer />

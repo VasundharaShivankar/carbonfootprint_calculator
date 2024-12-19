@@ -7,6 +7,7 @@ import f4 from './../../f4.jpg';
 import Arrow from './../../arrow.png'
 import './flightdetails.css' 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
 
 const flightdetails = (props) =>{
    const {flightname,departurestation,departuretime , arrivaltime, arrivalStation,Ticketprice} = props;
@@ -15,7 +16,7 @@ const flightdetails = (props) =>{
     <div className="products mt-3">
     <h2>AGRICULTURAL PRODUCTS</h2>
     <div className="product-list">
-  
+      <div className='product-list'>
       {/* Card 1 */}
       <div className="product-card">
         <img src={f1} alt="Organic Fertilizer" className="product-logo" />
@@ -24,7 +25,9 @@ const flightdetails = (props) =>{
         <p className="description">Boost soil fertility with eco-friendly, organic fertilizers that reduce carbon emissions.</p>
         <p className="contact"><strong>Contact:</strong> +91 9876543210</p>
         <p className="price"><strong>Price:</strong> Rs. 499</p>
-        <button className="btn btn-outline-success">Buy Now</button>
+        <button className="btn btn-outline-success">
+          <Link className='btn1 btn-outline-success' to='https://gardenpeacock.com/products/garden-peacock-epsom-salt-magnesium-sulphate-for-fertilizer-for-all-type-of-plants-nutrient-supplement-growth-home-garden-plants-250gram?srsltid=AfmBOoq6mYhxLCGQfQGn3Khxnda36qXNXH-_CjEO6P-z784CYboW1yoMkwo'>Buy Now</Link>
+          </button>
       </div>
   
       {/* Card 2 */}
@@ -35,7 +38,9 @@ const flightdetails = (props) =>{
         <p className="description">Protect your crops with environmentally safe, biodegradable pesticides.</p>
         <p className="contact"><strong>Contact:</strong> +91 9876543221</p>
         <p className="price"><strong>Price:</strong> Rs. 699</p>
-        <button className="btn btn-outline-success">Buy Now</button>
+        <button className="btn btn-outline-success">
+          <Link className='btn1 btn-outline-success' to='https://www.compo.es/productos/fertilizantes-y-cuidado-de-la-hoja/plantas-de-interior/compo-fertilizante-plantas-verdes'>Buy Now</Link>
+          </button>
       </div>
   
       {/* Card 3 */}
@@ -46,7 +51,9 @@ const flightdetails = (props) =>{
         <p className="description">Enhance crop yield sustainably with our carbon-neutral growth boosters.</p>
         <p className="contact"><strong>Contact:</strong> +91 9876543232</p>
         <p className="price"><strong>Price:</strong> Rs. 799</p>
-        <button className="btn btn-outline-success">Buy Now</button>
+        <button className="btn btn-outline-success">
+          <Link className='btn1 btn-outline-success' to='https://www.amazon.in/Garden-Genie-Root-Power-450g/dp/B0CS9TTQ47'>Buy Now</Link>
+          </button>
       </div>
   
       {/* Card 4 */}
@@ -57,9 +64,11 @@ const flightdetails = (props) =>{
         <p className="description">Turn organic waste into valuable compost with our easy-to-use kit.</p>
         <p className="contact"><strong>Contact:</strong> +91 9876543243</p>
         <p className="price"><strong>Price:</strong> Rs. 999</p>
-        <button className="btn btn-outline-success">Buy Now</button>
+        <button className="btn btn-outline-success">
+          <Link className='btn1 btn-outline-success' to='https://www.bighaat.com/products/katra-botanical-miticide'>Buy Now</Link>
+          </button>
       </div>
-  
+      </div>
     </div>
   </div>
   
