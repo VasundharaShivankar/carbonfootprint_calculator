@@ -11,7 +11,7 @@ function Calculator() {
   const [electricity, setElectricity] = useState('');
   const [gas, setGas] = useState('');
   const [transportation, setTransportation] = useState('');
-  const [food, setFood] = useState('');
+  const [urea, setUrea] = useState('');
   const [waste, setWaste] = useState('');
   const [fertilizer, setFertilizer] = useState('');
   const [carbonFootprint, setCarbonFootprint] = useState(null);
@@ -24,12 +24,12 @@ function Calculator() {
   const electricityCarbon = electricity * 0.92; // CO2 per kWh (example coefficient)
   const gasCarbon = gas * 1.92; // CO2 per therm (example coefficient)
   const transportationCarbon = transportation * 0.23; // CO2 per mile (example coefficient)
-  const foodCarbon = food * 0.02; // CO2 per meal (example coefficient)
+  const ureaCarbon = urea * 0.2; // CO2 per meal (example coefficient)
   const wasteCarbon = waste * 0.5; // CO2 per kg of waste (example coefficient)
   const fertilizercarbon = fertilizer * 5.15;
     // Calculating total carbon footprint
     
-  const totalCarbonFootprint = electricityCarbon + gasCarbon + transportationCarbon + foodCarbon + wasteCarbon + fertilizercarbon;
+  const totalCarbonFootprint = electricityCarbon + gasCarbon + transportationCarbon + ureaCarbon + wasteCarbon + fertilizercarbon;
 
     setCarbonFootprint(totalCarbonFootprint);
   };
@@ -76,12 +76,12 @@ function Calculator() {
               </div>
 
               <div className="form-group">
-                <label htmlFor="food">Food Consumption (meals):</label>
+                <label htmlFor="food">Urea:</label>
                 <input
                   type="number"
                   id="food"
-                  value={food}
-                  onChange={(e) => setFood(e.target.value)}
+                  value={urea}
+                  onChange={(e) => setUrea(e.target.value)}
                 />
               </div>
 
