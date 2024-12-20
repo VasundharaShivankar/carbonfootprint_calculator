@@ -14,7 +14,7 @@ export default function ReviewComp() {
             toast.success("Reviews Loaded");
         } catch (error) {
             console.error('Error loading reviews:', error);
-            toast.error("Failed to load reviews");
+            // toast.error("Failed to load reviews");
         }
     };
 
